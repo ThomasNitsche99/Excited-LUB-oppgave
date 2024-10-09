@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def generate_LUB_UiO() -> None:
-    program_codes = ["informatikk-programmering", "inf-design", "informatikk-ledelse"]
+    program_codes = ["informatikk-programmering", "inf-design", "informatikk-ledelse"] #Legg til studieprogrammer her for å hente ut flere
     for code in program_codes:
         try:
             #Fetching JSON data
