@@ -13,6 +13,8 @@ if __name__ == "__main__":
     }
     
     #Tag names, add if searching for other relevant sections
-    tag_names = ["kunnskap", "ferdigheter", "generell kompetanse"] # List to hold all keywords for information retrieval
+    tag_names = ["kunnskap", "ferdigheter", "generell kompetanse"] 
+    
+    # Initialize the class and run the main function
     usn_lub = USN_lub(programs_USN, tag_names)
     usn_lub.main()
