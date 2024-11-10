@@ -1,7 +1,3 @@
-import code
-import html
-from math import e
-import requests
 from bs4 import BeautifulSoup, Tag
 from datetime import datetime
 from selenium import webdriver
@@ -208,33 +204,18 @@ class USN_lub:
         for key, value in self.study_programs.items():
             code = value['code']
             print(f"Processing {code}")
-            shadow_HTML_content = test.get_HTML_from_url(value['code'])
+            shadow_HTML_content = self.get_HTML_from_url(value['code'])
             soup = BeautifulSoup(shadow_HTML_content, 'html.parser')
             relevant_tags = self.find_relevant_tags(soup_object=soup)
             content = self.get_content_for_LUBS(relevant_tags)
             self.export_to_text_file(key, code, content)
             print(f"Finished processing {code} \n\n")
             
-        print("Shut down driver")    
+        print("Shutting down driver...")    
         self.driver.quit()
 
 
 
 if __name__ == "__main__":
-    
-    
-    # Add programs and their codes to process more study programs
-    programs_USN = {
-        "IT og informasjonssystemer": {
-            "code": "ITIS",
-        },
-        "Bachelor i ingeniørfag, dataingeniør": {
-            "code": "ING2",
-        },
-    }
-    
-    #Tag names, add if searching for other relevant sections
-    tag_names = ["kunnskap", "ferdigheter", "generell kompetanse"] # List to hold all keywords for information retrieval
-    test = USN_lub(programs_USN, tag_names)
-    test.main()
+    pass
     
