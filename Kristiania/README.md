@@ -9,3 +9,7 @@ This folder consist of one script [`kristiania_scraping_script.py`](../Kristiani
 ## Usage
 
 Run the script [`kristiania_scraping_script.py`](../Kristiania/kristiania_scraping_script.py) for producing `.txt`files with the learning outcomes for each study program.
+
+## Requirements
+
+The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../Kristiania/requirements.txt)

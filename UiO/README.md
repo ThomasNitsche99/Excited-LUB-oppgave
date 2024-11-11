@@ -12,3 +12,7 @@ The folder contains two scripts;
 ## Usage
 
 To scrape the LUB's, either of the scripts can be used. Both will generate a `.txt` with the learning outcomes for each study program defined in the scripts.
+
+## Requirements
+
+The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../UiO/requirements.txt)
