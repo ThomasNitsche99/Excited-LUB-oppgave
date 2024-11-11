@@ -1,4 +1,4 @@
-### LUB oppgave for Excited
+# LUB oppgave for Excited
 
 1) `UiO` inneholder script for å hente ut LUB fra definerte studieprogrammer ved Universitetet i Oslo sine API'er og nettsider. Se README i mappen [UiO](/UiO/README.md) for mer informasjon om hvordan bruke scriptet. 
 
