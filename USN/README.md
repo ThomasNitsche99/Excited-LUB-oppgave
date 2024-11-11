@@ -12,6 +12,6 @@ The main class responsible for the scraping logic is `usn_lub`, which is impleme
 
 ## Usage
 
-To run the scraping script and generate the `.txt` files containing the learning outcomes, execute the [script.py](/script.py) file. This script initializes the `USN_lub` class with the necessary parameters and calls the main method to start the scraping process. 
+To run the scraping script and generate the `.txt` files containing the learning outcomes, execute the [script.py](../USN/script.py) file. This script initializes the `USN_lub` class with the necessary parameters and calls the main method to start the scraping process. 
 
-To add more study program and add relevant tags to extract text from, visit [script.py](/script.py)
+To add more study program and add relevant tags to extract text from, visit [script.py](../USN/script.py)
