@@ -89,9 +89,12 @@ def scrape_program_page(program_name, url):
     else:
         print(f"Failed to retrieve page for {program_name}. Status code: {response.status_code}")
 
-# Loop through all program URLs and scrape each one
-for name, url in program_urls.items():
-    scrape_program_page(name, url)
 
-print("All scraping complete")
+if __name__ == "__main__": 
+    
+    # Loop through all program URLs and scrape each one
+    for name, url in program_urls.items():
+        scrape_program_page(name, url)
+
+    print("All scraping complete")
 

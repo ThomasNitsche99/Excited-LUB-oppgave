@@ -13,6 +13,7 @@ import pdfplumber
 from io import BytesIO
 import re
 
+
 # Dictionary of study programs and their PDF URLs
 study_programs = {
     "Bachelor i informasjonsteknologi - Frontend- og mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
