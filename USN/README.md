@@ -4,7 +4,7 @@ This folder contains the logic for scraping the USN websites to extract learning
 
 ## Overview
 
-The main class responsible for the scraping logic is `usn_lub`, which is implemented in the [usn_lub_class.py](/usn_lub_class.py) file. This class handles the following tasks:
+The main class responsible for the scraping logic is `usn_lub`, which is implemented in the [usn_lub_class.py](../USN/usn_lub_class.py) file. This class handles the following tasks:
 - Fetching HTML content from the USN study program pages.
 - Parsing the HTML to find relevant tags containing learning outcomes.
 - Extracting and cleaning the content under these tags.
