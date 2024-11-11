@@ -7,7 +7,7 @@ This folder contains the logic for scraping the USN websites to extract learning
 The folder contains two scripts;
 * [`uio_script.py`](../UiO/uio_script.py) : Script which scrapes the UIO website trough using vrtx=source, meaning the LUBS are fetched similar to using a API. 
 
-* [`uio_web_scraping.py`](../UiO/uio_web_scraping.py.py) : Script which scrapes the UIO website directly by using the redered HTML on the website. 
+* [`uio_web_scraping.py`](../UiO/uio_web_scraping.py) : Script which scrapes the UIO website directly by using the redered HTML on the website. 
 
 ## Usage
 
