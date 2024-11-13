@@ -25,7 +25,7 @@ def extract_learning_outcomes(url):
                     if sibling.name in ["h2", "h3"]:
                         break
                     content_section.append(sibling.get_text(separator="\n", strip=True))
-
+                    content_section.append("\n")
                 # Join the content for easier saving to file
                 content_section = "\n".join(content_section)
                 break
@@ -35,6 +35,7 @@ def extract_learning_outcomes(url):
             file_name = "hiof_learning_outcomes.txt"
             with open(file_name, 'w', encoding='utf-8') as file:
                 file.write(content_section)
+               
                 
             print(f"Learning outcomes extracted and saved to '{file_name}'.")
         else:

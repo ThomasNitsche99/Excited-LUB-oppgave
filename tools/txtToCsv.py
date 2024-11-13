@@ -51,4 +51,4 @@ def create_csv(folder_path, output_csv):
 
 # Hvordan bruke: 
 # Bytt ut folder lenken, med lenken til hele prosjektet
-create_csv('/Users/cathrinelibaek/Desktop/LUB/Excited-LUB-oppgave', 'output.csv')
+create_csv('hiof_learning_outcomes.txt', 'hiof_learning_outcomes.csv')
