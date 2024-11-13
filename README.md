@@ -9,3 +9,4 @@
 4) `Kristiania` inneholder script for å hente ut LUB fra definerte studieprogrammer ved Høyskolen Kristiania sine nettsider. Se README i mappen [Kristiania](/Kristiania/README.md) for mer informasjon om hvordan bruke scriptet. 
 
 5) `UIA` inneholder script for å hente ut LUB fra definerte studieprogrammer ved Universitetet i Agder sine nettsider. Se README i mappen [UIA](/UIA/README.md) for mer informasjon om hvordan bruke scriptet. 
+
