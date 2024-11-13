@@ -190,13 +190,12 @@ class USN_lub:
         with open(f"{program}-({code}).txt", "w", encoding="utf-8") as file:
                 
                 for key, value in content.items():
-                    file.write(f"Content under '{key.lower()}':\n\n")
+                    file.write(f"{key.lower()}:\n")
                     
                     for item in value:
-                        file.write(f"{item} \n\n")
-                    
-                    file.write("---")    
-                    file.write("\n\n")
+                        file.write(f"{item}\n")
+                        
+                    file.write("\n")
                     
         print("Content exported to text file")
     

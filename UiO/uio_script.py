@@ -28,24 +28,24 @@ def generate_LUB_UiO() -> None:
                             content.append(sibling)
 
                     heading = h2.get_text()
-                    file.write(f"Content under '{heading}':\n\n")
+                    file.write(f"{heading}:\n")
                     
                     # Extract and print text from the content list
                     for element in content:
                         # Check if the element is a <p> or <li> tag
                         if element.name in ['p', 'li']:
                             text = element.get_text(separator=' ', strip=True)
-                            file.write(text + '\n\n')  # Add an extra newline
+                            file.write(text + '\n')  # Add an extra newline
                         elif element.name == 'ul':
                             # If the element is a <ul>, process its <li> children
                             for li in element.find_all('li'):
                                 text = li.get_text(separator=' ', strip=True)
-                                file.write(text + '\n\n')  # Add an extra newline
+                                file.write(text + '\n')  # Add an extra newline
                         else:
                             # For other tags, extract text without adding extra newlines
                             text = element.get_text(separator=' ', strip=True)
                             file.write(text + '\n')
-                    file.write('---\n\n')  # Separator between sections
+                    file.write('\n')  # Separator between sections
             
         except requests.exceptions.HTTPError as http_err:
             print(f"HTTP error occurred: {http_err}")

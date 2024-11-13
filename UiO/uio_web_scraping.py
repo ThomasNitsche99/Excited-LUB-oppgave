@@ -57,32 +57,29 @@ def scrape_program_page(program_name, url):
         with open(f'{program_name}_learning_outcomes.txt', 'w', encoding='utf-8') as file:
             if kunnskaper:
                 
-                file.write("Content under 'Kunnskaper':\n")
+                file.write("Kunnskaper:\n")
                 
                 for item in kunnskaper:
                     file.write(f"{item}\n")
                 
-                file.write(f"---")
                 file.write(f"\n\n")    
                                 
             if ferdigheter:
                 
-                file.write("Content under 'Ferdigheter':\n")
+                file.write("Ferdigheter:\n")
                 
                 for item in ferdigheter:
                     file.write(f"{item}\n")
                     
-                file.write(f"---")
                 file.write(f"\n\n") 
                    
             if generell_kompetanse:
                 
-                file.write("Content under 'Generell kompetanse':\n")
+                file.write("Generell kompetanse:\n")
                 
                 for item in generell_kompetanse:
                     file.write(f"{item}\n")
                     
-                file.write(f"---")
                 file.write(f"\n\n")    
 
         print(f"Scraping complete for {program_name}. File saved as '{program_name}_learning_outcomes.txt'.")
