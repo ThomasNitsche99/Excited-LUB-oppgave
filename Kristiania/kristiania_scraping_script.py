@@ -16,14 +16,16 @@ import re
 
 # Dictionary of study programs and their PDF URLs
 study_programs = {
-    "Bachelor i informasjonsteknologi - Frontend- og mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
-    "Bachelor i informasjonsteknologi - Interaktivt design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
-    "Bachelor i informasjonsteknologi - Kunstig intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf", 
-    "Bachelor i informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
-    "Bachelor i informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf" 
+    "Bachelor-i-informasjonsteknologi - Frontend-og-mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
+    "Bachelor-i-informasjonsteknologi - Interaktivt-design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
+    "Bachelor-i-informasjonsteknologi - Kunstig-intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf", 
+    "Bachelor-i-informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
+    "Bachelor-i-informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf" 
 }
 
-def extract_learning_outcomes_from_pdf(pdf_url):
+university = "Kristiania"
+
+def extract_learning_outcomes_from_pdf(pdf_url, program_name):
     response = requests.get(pdf_url)
     
     if response.status_code == 200:
@@ -67,18 +69,19 @@ def extract_learning_outcomes_from_pdf(pdf_url):
                             sections[current_section] += line + "\n"
 
             # Save the extracted information to a text file
-            file_name = pdf_url.split("/")[-1].replace(".pdf", ".txt")
+            file_name = f"{university}_" + pdf_url.split("/")[-1].replace(".pdf", ".txt")
+            print(file_name)
             with open(file_name, 'w', encoding='utf-8') as file:
                 for section_name, content in sections.items():
                     if content.strip():  # Ensure there's content to write
                         file.write(f"{section_name}:\n{content}\n")
 
-            print(f"Extraction complete for {file_name}. Check '{file_name}' for the results.")
+            print(f"Extraction complete for {program_name}. Check '{file_name}' for the results.")
     else:
         print(f"Failed to retrieve PDF for {pdf_url}. Status code: {response.status_code}")
 
 # Loop through all study programs and extract information from each PDF
 for program_name, pdf_url in study_programs.items():
-    extract_learning_outcomes_from_pdf(pdf_url)
+    extract_learning_outcomes_from_pdf(pdf_url, program_name)
 
 print("All extraction complete. Check the text files for each study program.")

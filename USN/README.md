@@ -19,3 +19,6 @@ To add more study program and add relevant tags to extract text from, visit [scr
 ## Requirements
 
 The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../USN/requirements.txt)
+
+```bash
+pip install -r requirements.txt

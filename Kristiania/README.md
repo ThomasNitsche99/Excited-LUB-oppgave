@@ -13,3 +13,6 @@ Run the script [`kristiania_scraping_script.py`](../Kristiania/kristiania_scrapi
 ## Requirements
 
 The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../Kristiania/requirements.txt)
+
+```bash
+pip install -r requirements.txt

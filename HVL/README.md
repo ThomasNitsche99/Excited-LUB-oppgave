@@ -13,3 +13,6 @@ Run the script [`hvl_scraping_script.py`](../HVL/hvl_scraping_script.py) for pro
 ## Requirements
 
 The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../HVL/requirements.txt)
+
+```bash
+pip install -r requirements.txt

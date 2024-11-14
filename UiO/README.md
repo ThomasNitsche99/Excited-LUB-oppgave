@@ -16,3 +16,6 @@ To scrape the LUB's, either of the scripts can be used. Both will generate a `.t
 ## Requirements
 
 The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../UiO/requirements.txt)
+
+```bash
+pip install -r requirements.txt
