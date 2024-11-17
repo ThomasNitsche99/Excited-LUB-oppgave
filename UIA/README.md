@@ -13,3 +13,6 @@ Run the script [`uia_scraping_script.py`](../UIA/uia_scraping_script.py) for pro
 ## Requirements
 
 The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../UIA/requirements.txt)
+
+```bash
+pip install -r requirements.txt

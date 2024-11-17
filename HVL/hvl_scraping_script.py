@@ -1,11 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
 
-# URLs for the study programs at HVL
+# URLs for the study programs at HVL. Add to this list in order to scrape more programs, following the same format. 
 program_page_hvl_url = {
-    "Bachelor i informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2024h/studieplan/",
-    "Bachelor i ingeniørfag, data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
+    "Bachelor-i-informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2024h/studieplan/",
+    "Bachelor-i-ingeniørfag-data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
 }
+
+university = "HVL"
 
 # Function to scrape the study course page
 def scrape_hvl_program_page(program_name, url):
@@ -32,7 +34,7 @@ def scrape_hvl_program_page(program_name, url):
         generell_kompetanse = extract_section("Generell kompetanse:")
 
         # Create a single text file for each study program
-        with open(f'{program_name}_learning_outcomes.txt', 'w', encoding='utf-8') as file:
+        with open(f'{university}_{program_name}_LearningOutcomes.txt', 'w', encoding='utf-8') as file:
             if kunnskaper:
                 file.write("Kunnskaper:\n" + kunnskaper + "\n\n")
             if ferdigheter:
@@ -40,7 +42,7 @@ def scrape_hvl_program_page(program_name, url):
             if generell_kompetanse:
                 file.write("Generell kompetanse:\n" + generell_kompetanse + "\n\n")
 
-        print(f"Scraping complete for {program_name}. File saved as '{program_name}_learning_outcomes.txt'.")
+        print(f"Scraping complete for {program_name}. File saved as 'f'{university}_{program_name}_LearningOutcomes.txt'.")
     else:
         print(f"Failed to retrieve page for {program_name}. Status code: {response.status_code}")
 

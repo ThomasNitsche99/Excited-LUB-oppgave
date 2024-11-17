@@ -16,6 +16,7 @@ class USN_lub:
         self.driver = webdriver.Chrome(options=self.chrome_options)
         self.shadow = Shadow(self.driver)
         self.current_year = datetime.now().year
+        self.university = "USN"
         
     
     def clean_text(self, text:str) -> str:
@@ -187,29 +188,30 @@ class USN_lub:
             code (str): The code for the program
             content (dict): The dictionary containing the content to be exported
         """
-        with open(f"{program}-({code}).txt", "w", encoding="utf-8") as file:
+        file_name = f"{self.university}_{program}-{code}_LearningOutcomes.txt"
+        with open(file_name, "w", encoding="utf-8") as file:
                 
                 for key, value in content.items():
-                    file.write(f"Content under '{key.lower()}':\n\n")
+                    file.write(f"{key.lower()}:\n")
                     
                     for item in value:
-                        file.write(f"{item} \n\n")
+                        file.write(f"{item}\n")
+                        
+                    file.write("\n")
                     
-                    file.write("---")    
-                    file.write("\n\n")
-                    
-        print("Content exported to text file")
+        print(f"Content exported to text file. File saved as {file_name}")
     
     def main(self):
         for key, value in self.study_programs.items():
+            program = key
             code = value['code']
-            print(f"Processing {code}")
+            print(f"Processing {key}({code})")
             shadow_HTML_content = self.get_HTML_from_url(value['code'])
             soup = BeautifulSoup(shadow_HTML_content, 'html.parser')
             relevant_tags = self.find_relevant_tags(soup_object=soup)
             content = self.get_content_for_LUBS(relevant_tags)
-            self.export_to_text_file(key, code, content)
-            print(f"Finished processing {code} \n\n")
+            self.export_to_text_file(program, code, content)
+            print(f"Finished processing {program} ({code}) \n\n")
             
         print("Shutting down driver...")    
         self.driver.quit()
