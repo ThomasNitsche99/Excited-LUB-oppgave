@@ -1,8 +1,11 @@
 import requests
 from bs4 import BeautifulSoup
 
-# URL of the HIOf page to scrape
-url = "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/hva-lerer-du/"
+# List of URLs for different HIOf study programs
+urls = [
+    "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/hva-lerer-du/",
+    "https://www.hiof.no/studier/programmer/itbdes-bachelorstudium-i-informatikk-design-og-utvikling-av-itsystemer/hva-lerer-du/"
+]
 
 # Function to extract learning outcomes
 def extract_learning_outcomes(url):
@@ -31,19 +34,23 @@ def extract_learning_outcomes(url):
                 break
 
         if content_section:
-            # Saving to a text file
-            file_name = "hiof_learning_outcomes.txt"
+            # Generate a unique filename based on the URL
+            program_name = url.split("/")[-3]  # Extracts a unique part from the URL
+            file_name = f"hiof_{program_name}_learning_outcomes.txt"
+            
+            # Save the extracted content to the file
             with open(file_name, 'w', encoding='utf-8') as file:
                 file.write(content_section)
                 
             print(f"Learning outcomes extracted and saved to '{file_name}'.")
         else:
-            print("Could not find the learning outcomes section on the page. Please check if the structure has changed.")
+            print(f"Could not find the learning outcomes section on the page: {url}")
     else:
-        print(f"Failed to retrieve page. Status code: {response.status_code}")
+        print(f"Failed to retrieve page. Status code: {response.status_code} for URL: {url}")
 
-# Run the extraction
+# Run the extraction for each URL in the list
 if __name__ == "__main__":
     print("Starting the HIOf learning outcomes scraping process...")
-    extract_learning_outcomes(url)
-    print("Scraping complete. Check 'hiof_learning_outcomes.txt' for the results.")
+    for url in urls:
+        extract_learning_outcomes(url)
+    print("Scraping complete. Check the generated text files for each study program.")
