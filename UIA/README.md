@@ -4,7 +4,11 @@ This folder contains the logic for scraping the HVL websites to extract learning
 
 ## Overview
 
-This folder consist of one script [`uia_scraping_script.py`](../UIA/uia_scraping_script.py), which retrieves the learning outcomes from the study programs defined in the script. 
+This folder consist of one script [`uia_scraping_script.py`](../UIA/uia_scraping_script.py), which retrieves the learning outcomes from the study programs defined in the script.
+
+## Output
+
+The `.txt` files will be saved to the output folder
 
 ## Usage
 

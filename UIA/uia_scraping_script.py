@@ -1,12 +1,18 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 
 # Study programs to scrape. Add to this list in order to scrape more programs, following the same format. 
 study_programs = {
-    "data-ingeniorutdanning-bachelor": "https://www.uia.no/studier/program/data-ingeniorutdanning-bachelor/studieplaner/2024h.html#toc9",
+    "Bachelor i ingeniørfag, data": "https://www.uia.no/studier/program/data-ingeniorutdanning-bachelor/studieplaner/2024h.html#toc9",
 }
 
 university = "UIA"
+
+# Define the output directory (ensuring it exists)
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Get script directory
+output_dir = os.path.join(script_dir, "output")  # Define output path
+os.makedirs(output_dir, exist_ok=True)  # Create the folder if it does not exist
 
 
 # Function to scrape the study course page
@@ -53,10 +59,11 @@ def scrape_uia_program_page(study_program: dict):
             kunnskaper = extract_section("Kunnskap")
             generell_kompetanse = extract_generell_kompetanse("Generell kompetanse")  # Stopping at <h2> for this section
 
-            # Create a single text file for the program
+            # Saving to a text file
             file_name = f"{university}_{program}_LearningOutcomes.txt"
+            file_path = os.path.join(output_dir, file_name)
 
-            with open(file_name, 'w', encoding='utf-8') as file:
+            with open(file_path, 'w', encoding='utf-8') as file:
                 if kunnskaper:
                     file.write("Kunnskaper:\n" + kunnskaper + "\n\n")
                 if ferdigheter:
