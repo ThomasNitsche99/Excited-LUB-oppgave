@@ -4,7 +4,13 @@ This folder contains the logic for scraping the HVL websites to extract learning
 
 ## Overview
 
-This folder consist of one script [`kristiania_scraping_script.py`](../Kristiania/kristiania_scraping_script.py), which retrieves the learning outcomes from the study programs defined in the script. 
+This folder consist of one script [`kristiania_scraping_script.py`](../Kristiania/kristiania_scraping_script.py), which retrieves the learning outcomes from the study programs defined in the script.
+
+New study programs can be added directly to the script, in the `study_programs` dictionary.
+
+## Output
+
+The `.txt` files will be saved to the output folder
 
 ## Usage
 
