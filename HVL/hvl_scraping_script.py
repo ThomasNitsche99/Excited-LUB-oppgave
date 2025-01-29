@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 
 # URLs for the study programs at HVL. Add to this list in order to scrape more programs, following the same format. 
 program_page_hvl_url = {
@@ -8,6 +9,11 @@ program_page_hvl_url = {
 }
 
 university = "HVL"
+
+# Define the output directory (ensuring it exists)
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Get script directory
+output_dir = os.path.join(script_dir, "output")  # Define output path
+os.makedirs(output_dir, exist_ok=True)  # Create the folder if it does not exist
 
 # Function to scrape the study course page
 def scrape_hvl_program_page(program_name, url):
@@ -32,9 +38,13 @@ def scrape_hvl_program_page(program_name, url):
         ferdigheter = extract_section("Ferdigheiter:")
         kunnskaper = extract_section("Kunnskap:")
         generell_kompetanse = extract_section("Generell kompetanse:")
+        
+        # Saving to a text file
+        file_name = f"{university}_{program_name}_LearningOutcomes.txt"
+        file_path = os.path.join(output_dir, file_name)
 
         # Create a single text file for each study program
-        with open(f'{university}_{program_name}_LearningOutcomes.txt', 'w', encoding='utf-8') as file:
+        with open(file_path, 'w', encoding='utf-8') as file:
             if kunnskaper:
                 file.write("Kunnskaper:\n" + kunnskaper + "\n\n")
             if ferdigheter:
