@@ -1,16 +1,31 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 
 # Study programs to scrape. Add to this list in order to scrape more programs, following the same format. 
 study_programs = {
-    "dat-bachelorstudium-i-ingeniorfag-data": "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/hva-lerer-du/",
-    "avf-bachelorstudium-i-arbeids-og-velferdsfag": "https://www.hiof.no/studier/programmer/avf-bachelorstudium-i-arbeids-og-velferdsfag/hva-lerer-du/"
+    "Bachelor i ingeniørfag - data, dataingeniør": "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/hva-lerer-du/",
+    "Bachelorstudium i arbeids- og velferdsfag": "https://www.hiof.no/studier/programmer/avf-bachelorstudium-i-arbeids-og-velferdsfag/hva-lerer-du/"
 }
 
 university = "HIOF"
 
+
+# Define the output directory (ensuring it exists)
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Get script directory
+output_dir = os.path.join(script_dir, "output")  # Define output path
+os.makedirs(output_dir, exist_ok=True)  # Create the folder if it does not exist
+
 # Function to extract learning outcomes
 def extract_learning_outcomes(study_program: dict):
+    """
+    Function for extracting learning outcomes from the study program pages of Østfold University College (HIOF). 
+    Saves the learning outcomes to text files in the output directory.
+    
+
+    Args:
+        study_program (dict): A dictionary with study program names as keys and URLs to the program pages as values.
+    """
     for key, value in study_program.items():
         program = key
         url = value
@@ -41,7 +56,9 @@ def extract_learning_outcomes(study_program: dict):
             if content_section:
                 # Saving to a text file
                 file_name = f"{university}_{program}_LearningOutcomes.txt"
-                with open(file_name, 'w', encoding='utf-8') as file:
+                file_path = os.path.join(output_dir, file_name)
+
+                with open(file_path, 'w', encoding='utf-8') as file:
                     file.write(content_section)
                     
                 
