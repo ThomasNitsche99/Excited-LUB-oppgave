@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import os
 
 # Study programs to scrape. Add to this list in order to scrape more programs, following the same format. 
 study_programs = {
@@ -8,6 +9,11 @@ study_programs = {
 }
 
 university = "UIB"
+
+# Define the output directory (ensuring it exists)
+script_dir = os.path.dirname(os.path.abspath(__file__))  # Get script directory
+output_dir = os.path.join(script_dir, "output")  # Define output path
+os.makedirs(output_dir, exist_ok=True)  # Create the folder if it does not exist
 
 # Function to extract learning outcomes
 def extract_learning_outcomes(study_programs: dict):
@@ -41,12 +47,14 @@ def extract_learning_outcomes(study_programs: dict):
                 
                 # Save the extracted content to the file
                 file_name = f"{university}_{program}_LearningOutcomes.txt"
-                with open(file_name, 'w', encoding='utf-8') as file:
+                file_path = os.path.join(output_dir, file_name)
+
+                with open(file_path, 'w', encoding='utf-8') as file:
                     file.write(content_text)
                     
                 print(f"Learning outcomes extracted and saved to '{file_name}'.")
             else:
-                print(f"Could not find the 'Kva lærer du?' section on the page: {url}")
+                print(f"Could not find the 'Kva lærer du?' section on the page: {program_url}")
         except requests.exceptions.HTTPError as http_err:
             print(f"HTTP error occurred: {http_err}")
         except Exception as err:

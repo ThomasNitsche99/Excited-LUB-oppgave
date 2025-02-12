@@ -1,0 +1,104 @@
+"Sheet containing all config for Schools to be scraped. Edit this file to add new schools and study programs or change the existing ones."
+
+Data = {
+    "UIO": {
+        "study_programs": {
+            "Informatikk-programmering-og-systemarkitektur-(bachelor)": "https://www.uio.no/studier/program/informatikk-programmering/hva-lerer-du/",
+            "Informatikk-design-bruk-interaksjon-(bachelor)": "https://www.uio.no/studier/program/inf-design/hva-lerer-du/",
+            "Informatikk-digital-økonomi-og-ledelse-(bachelor)": "https://www.uio.no/studier/program/informatikk-ledelse/hva-lerer-du/",
+        }, 
+        "type":"website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    }, 
+    "UIB": {
+        "study_programs": {
+            "Informatikk-Datateknologi-bachelor": "https://www4.uib.no/program/informatikk-datateknologi-bachelor/plan",
+            "Kunstig-intelligens-bachelor": "https://www4.uib.no/program/kunstig-intelligens-bachelor/plan"
+        }, 
+        "type":"website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "UIA": {
+        "study_programs": {
+            "Bachelor-i-ingeniørfag-data": "https://www.uia.no/studier/program/data-ingeniorutdanning-bachelor/studieplaner/2024h.html",
+        },
+        "type":"website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "NTNU": {
+        "study_programs": {
+            "Bachelor-i-programmering": "https://www.ntnu.no/studier/bprog/laeringsmal",
+            "Bachelor-i-informatikk": "https://www.ntnu.no/studier/bit/laeringsmal",
+            "Bachelor-i-ingeniørfag-data": "https://www.ntnu.no/studier/bidata/laeringsmal"
+        },
+        "type":"website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "HVL": {
+        "study_programs": {
+            "Bachelor-i-informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2024h/studieplan/",
+            "Bachelor-i-ingeniørfag-data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
+        },
+        "type":"website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "HIOF": {
+        "study_programs": {
+            "Bachelor-i-ingeniørfag-data, dataingienør": "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/hva-lerer-du/",
+        },
+        "type":"website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "KRISTIANIA": {
+        "study_programs": {
+            "Bachelor-i-informasjonsteknologi - Frontend-og-mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
+            "Bachelor-i-informasjonsteknologi - Interaktivt-design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
+            "Bachelor-i-informasjonsteknologi - Kunstig-intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf", 
+            "Bachelor-i-informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
+            "Bachelor-i-informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf" 
+        },
+        "type": "pdf",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "UIT": {
+        "study_programs": {
+            "Bachelor-i-datateknikk, ingeniør": "https://uit.no/Content/869939/cache=20252801135857/2025%20Studieplan%20Datateknikk%20ingeni%C3%B8r%20-%20bachelor%20%28ordin%C3%A6r%20y-vei%203-semesterordning%20nettbasert%29%20BDT_BYDT_NBDT_BDT3S%20kull2025.pdf",
+            "Bachelor-i-informatikk, datafag": "https://uit.no/Content/868797/cache=20252801135340/Studieplan%20Bachelor%20i%20informatikk%2C%20datafag%20gjeldende%20fra%20h%C3%B8sten%202025.pdf",
+            "Bachelor-i-informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
+        },
+        "type": "pdf",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "UIS": {
+        "study_programs": {
+            "Bachelor-i-ingeniørfag, datateknologi": "https://www.uis.no/nb/studier/datateknologi-bachelor#/",
+        },
+        "type": "website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "USN": {
+        "study_programs": {
+            "Bachelor-i-IT-og-informasjonssystemer": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ITIS_2025_H%C3%98ST",
+            "Bachelor-i-ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST",
+        },
+        "type": "website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+    "OSLOMET": {
+        "study_programs": {
+            "Bachelor-i-informasjonsteknologi": "https://student.oslomet.no/studier/-/studieinfo/programplan/INFORMATIK/2024/H%C3%98ST",
+            "Bachelor-i-ingeniørfag, data": "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGDATA/2024/H%C3%98ST",
+        },
+        "type": "website",
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+    },
+}
+
+
+# Writing config to json file
+import json
+with open("config.json", "w", encoding="utf-8") as json_file:
+    json.dump(Data, json_file, indent=4)
+print("JSON file saved successfully!")
+
+

@@ -7,7 +7,6 @@ study_programs = {
     "Informatikk-programmering-og-systemarkitektur-(bachelor)": "informatikk-programmering",
     "Informatikk-design-bruk-interaksjon-(bachelor)": "inf-design",
     "Informatikk-digital-økonomi-og-ledelse-(bachelor)": "informatikk-ledelse",
-    "Informatikk-digital-økonomi-og-ledelse-(master)": "informatikk-ledelse-master",
 }
 
 university = "UIO"
