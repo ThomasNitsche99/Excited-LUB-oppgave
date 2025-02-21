@@ -76,8 +76,8 @@
     },
     "USN": {
         "study_programs": {
-            "Bachelor-i-IT-og-informasjonssystemer": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ITIS_2025_H%C3%98ST",
-            "Bachelor-i-ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST"
+            "Bachelor i IT og informasjonssystemer": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ITIS_2025_H%C3%98ST",
+            "Bachelor i ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST"
         },
         "type": "website",
         "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
@@ -88,6 +88,6 @@
             "Bachelor-i-ingeniørfag, data": "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGDATA/2024/H%C3%98ST"
         },
         "type": "website",
-        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+        "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section. Make sure to retrieve the nested points as one"
     }
 }
