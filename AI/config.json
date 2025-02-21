@@ -34,8 +34,8 @@
     },
     "HVL": {
         "study_programs": {
-            "Bachelor-i-informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2024h/studieplan/",
-            "Bachelor-i-ingeniørfag-data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
+            "Bachelor i informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2024h/studieplan/",
+            "Bachelor i ingeniørfag data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
         },
         "type": "website",
         "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
