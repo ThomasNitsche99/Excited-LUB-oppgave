@@ -32,7 +32,7 @@ Data = {
             "Bachelor-i-ingeniørfag-data": "https://www.ntnu.no/studier/bidata/laeringsmal"
         },
         "type":"website",
-        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Hva lærer du") section. Make sure to retrieve the descriptions listed in bold font as well'
+        "prompt": 'Extract all descriptions under "kunnskaper", "ferdigheter", and "generell kompetanse" from the "læringsutbyttebeskrivelser" ("Læringsutbytte") section. These are listed within a toggle with the title "Læringsutbytte" on the page.'
     },
     "HVL": {
         "study_programs": {

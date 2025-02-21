@@ -25,12 +25,12 @@
     },
     "NTNU": {
         "study_programs": {
-            "Bachelor-i-programmering": "https://www.ntnu.no/studier/bprog/laeringsmal",
-            "Bachelor-i-informatikk": "https://www.ntnu.no/studier/bit/laeringsmal",
-            "Bachelor-i-ingeniørfag-data": "https://www.ntnu.no/studier/bidata/laeringsmal"
+            "Bachelor i programmering": "https://www.ntnu.no/studier/bprog/laeringsmal",
+            "Bachelor i informatikk": "https://www.ntnu.no/studier/bit/laeringsmal",
+            "Bachelor i ingenioerfag, data": "https://www.ntnu.no/studier/bidata/laeringsmal"
         },
         "type": "website",
-        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+        "prompt": "Extract all descriptions under 'kunnskaper', 'ferdigheter', and 'generell kompetanse' from the 'læringsutbyttebeskrivelser' ('Læringsutbytte') section. These are listed within a toggle list with the title 'Læringsutbytte' on the page"
     },
     "HVL": {
         "study_programs": {
@@ -49,14 +49,14 @@
     },
     "KRISTIANIA": {
         "study_programs": {
-            "Bachelor-i-informasjonsteknologi - Frontend-og-mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
-            "Bachelor-i-informasjonsteknologi - Interaktivt-design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
-            "Bachelor-i-informasjonsteknologi - Kunstig-intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf",
-            "Bachelor-i-informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
-            "Bachelor-i-informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf"
+            "Bachelor i informasjonsteknologi - Frontend og mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
+            "Bachelor i informasjonsteknologi - Interaktivt design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
+            "Bachelor i informasjonsteknologi - Kunstig intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf",
+            "Bachelor i informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
+            "Bachelor i informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf"
         },
         "type": "pdf",
-        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+        "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section."
     },
     "UIT": {
         "study_programs": {
