@@ -38,10 +38,10 @@ Det vil også være mulig å lage en CSV fil for kun en skole. Da kjører du fil
 
 Ved å kjøre scriptet vil det lages en CSV - fil som inneholder:
 
-* *skole*
-* *studie_program*
-* *læringsutbytte type (kunnskap, ferdighet eller generell kompetanse)*
-* *læringsutbytte*.
+- *skole*
+- *studie_program*
+- *læringsutbytte type (kunnskap, ferdighet eller generell kompetanse)*
+- *læringsutbytte*.
 
 Eks:
 
