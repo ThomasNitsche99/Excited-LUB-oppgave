@@ -6,7 +6,7 @@
       "Informatikk: Digital oekonomi og ledelse": "https://www.uio.no/studier/program/informatikk-ledelse/hva-lerer-du/"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include everything"
   },
   "UIB": {
     "study_programs": {
@@ -14,7 +14,7 @@
       "Bachelor i kunstig intelligens": "https://www4.uib.no/program/kunstig-intelligens-bachelor/plan"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"læringsutbyte\") section. Make sure to retrieve the descriptions listed in bold font as well"
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"læringsutbyte\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include everything"
   },
   "UIA": {
     "study_programs": {

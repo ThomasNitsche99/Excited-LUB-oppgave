@@ -61,7 +61,6 @@ For å gjøre om CSV - filen med læringsutbytter til excel format, kjører du [
 |`config.json`|JSON|Definering av skoler, studieprogram med tilsvarende URL'er og *prompt*|
 |`.env`|environment variables|Definering av firecrawl API - nøkkel. NB! Må lages på egenhånd. Se ___|
 |`learning_outcomes.ipynb`|Jupyter notebook|Notebook for uthenting av læringsutbyttebeskrivelser|
-|`learning_outcomes.py`|Python|Pythonfil for uthenting av læringsutbyttebeskrivelser|
 |`learning_outcomes_single.ipynb`|Jupyter notebook|Notebook for uthenting av læringsutbyttebeskrivelser for én skole|
 |`convert_to_excel.ipynb`|Jupyter notebook|Notebook for konverting av CSV til Excel|
 |`utils/helpers.py`|Python|Pythonfil som inneholder diverse hjelpefunksjoner|
