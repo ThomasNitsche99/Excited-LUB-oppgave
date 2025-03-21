@@ -60,12 +60,12 @@
     },
     "UIT": {
         "study_programs": {
-            "Bachelor-i-datateknikk, ingeniør": "https://uit.no/Content/869939/cache=20252801135857/2025%20Studieplan%20Datateknikk%20ingeni%C3%B8r%20-%20bachelor%20%28ordin%C3%A6r%20y-vei%203-semesterordning%20nettbasert%29%20BDT_BYDT_NBDT_BDT3S%20kull2025.pdf",
-            "Bachelor-i-informatikk, datafag": "https://uit.no/Content/868797/cache=20252801135340/Studieplan%20Bachelor%20i%20informatikk%2C%20datafag%20gjeldende%20fra%20h%C3%B8sten%202025.pdf",
-            "Bachelor-i-informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
+            "Bachelor i datateknikk, ingeniør": "https://uit.no/Content/869939/cache=20252801135857/2025%20Studieplan%20Datateknikk%20ingeni%C3%B8r%20-%20bachelor%20%28ordin%C3%A6r%20y-vei%203-semesterordning%20nettbasert%29%20BDT_BYDT_NBDT_BDT3S%20kull2025.pdf",
+            "Bachelor i informatikk, datafag": "https://uit.no/Content/868797/cache=20252801135340/Studieplan%20Bachelor%20i%20informatikk%2C%20datafag%20gjeldende%20fra%20h%C3%B8sten%202025.pdf",
+            "Bachelor i informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
         },
         "type": "pdf",
-        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbyttebeskrivelse\") section. "
     },
     "UIS": {
         "study_programs": {
@@ -76,11 +76,11 @@
     },
     "USN": {
         "study_programs": {
-            "Bachelor-i-IT-og-informasjonssystemer": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ITIS_2025_H%C3%98ST",
-            "Bachelor-i-ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST"
+            "Bachelor i IT og informasjonssystemer": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ITIS_2025_H%C3%98ST",
+            "Bachelor i ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST"
         },
         "type": "website",
-        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+        "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section. The content may not be visible. Wait until it is available"
     },
     "OSLOMET": {
         "study_programs": {
