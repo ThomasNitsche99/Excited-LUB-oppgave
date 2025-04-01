@@ -18,8 +18,6 @@ Python filen som heter [`firecrawl_app.py`](firecrawl_app.py) er hvor selve fire
 
 **OBS!** Firecrawl krever en API-nøkkel. Denne blir ikke pushet til repoet men distribueres til de som forespør. API - nøkkelen hentes fra en `.env` fil, så sørg for å lage denne filen i rotmappen av prosjektet med følgende innhold:
 
-`.env` - fil:
-
 ```python
 FIRECRAWL_API_KEY = "your_api_key_here"
 ```
@@ -32,15 +30,15 @@ Dersom en ønsker å legge til flere skoler eller studieprogram er det bare å l
 
 ### Uthenting av læringsutbyttebeskrivelser og output
 
-For å hente ut læringsutbyttebeskrivelser for alle studieprogram og skoler, kjører du enten jupyter notebooken [`learning_outcomes.ipynb`](learning_outcomes.ipynb) eller [`learning_outcomes.py`](learning_outcomes.py). Eneste forskjellen mellom disse er filtypen.
+For å hente ut læringsutbyttebeskrivelser for alle studieprogram og skoler, kjører du jupyter notebooken [`learning_outcomes.ipynb`](learning_outcomes.ipynb). Denne vil basere seg på `config.json`
 
-Det vil også være mulig å lage en CSV fil for kun en skole. Da kjører du filen som heter [`learning_outcomes_single.ipynb`](learning_outcomes_single.ipynb). Sørg for å definere nødvendige parametre i filen.
+Det vil også være mulig å hente ut læringsutbyttebeskrivelser for kun en skole. Da kjører du filen som heter [`learning_outcomes_single.ipynb`](learning_outcomes_single.ipynb). Sørg for å definere nødvendige parametre i filen.
 
-Ved å kjøre scriptet vil det lages en CSV - fil som inneholder:
+Ved å kjøre scriptene vil det lages en CSV - fil som inneholder:
 
 - *skole*
 - *studie_program*
-- *læringsutbytte type (kunnskap, ferdighet eller generell kompetanse)*
+- *læringsutbytte type (kunnskap, ferdighet eller generell_kompetanse)*
 - *læringsutbytte*.
 
 Eks:
@@ -49,9 +47,9 @@ Eks:
 |-------|--------------|---------------------|----------------|
 |   UiO   |     Informatikk        |  Kunnskap                   |   kandidaten ...             |
 
-#### Konvertering til excel format
+#### Excel format
 
-For å gjøre om CSV - filen med læringsutbytter til excel format, kjører du [`convert_to_excel.ipynb`](convert_to_excel.ipynb). Sørg for å definere riktig bane til CSV-filen du vil konvertere. Dette lager en `.xlx` - fil som havner i rotmappen av prosjektet.
+Etter å ha kjørt scriptet som lager CSV-filer, vil det i tillegg lages en excel fil. Denne følger med litt formateringer for å gjøre excel filen lettere å lese. Filen vil hete det samme som CSV-filen som lages, bare ha endingen `.xlx`.
 
 ## Filstruktur
 

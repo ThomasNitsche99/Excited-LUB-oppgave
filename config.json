@@ -14,7 +14,7 @@
       "Bachelor i kunstig intelligens": "https://www4.uib.no/program/kunstig-intelligens-bachelor/plan"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"læringsutbyte\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include everything"
+    "prompt": "Extract all descriptions under \"Kunnskap\", \"Ferdigheiter\", and \"Generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"læringsutbyte\") section. Make sure to include everything"
   },
   "UIA": {
     "study_programs": {
@@ -30,7 +30,7 @@
       "Bachelor i ingenioerfag, data": "https://www.ntnu.no/studier/bidata/laeringsmal"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under 'kunnskaper', 'ferdigheter', and 'generell kompetanse' from the 'læringsutbyttebeskrivelser' ('Læringsutbytte') section. These are listed within a toggle list with the title 'Læringsutbytte' on the page"
+    "prompt": "Extract all descriptions under 'kunnskaper', 'ferdigheter', and 'generell kompetanse' from the 'læringsutbyttebeskrivelser' ('Læringsutbytte') section. These are listed within a toggle list with the title 'Læringsutbytte' on the page. Make sure to include all descriptions"
   },
   "HVL": {
     "study_programs": {
@@ -38,14 +38,14 @@
       "Bachelor i ingeniørfag data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheiter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheiter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include all descriptions"
   },
   "HIOF": {
     "study_programs": {
       "Bachelor i ingeniørfag data, dataingienør": "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/hva-lerer-du/"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well and the nested points as one"
+    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well and the nested points as one. Make sure to include all descriptions"
   },
   "KRISTIANIA": {
     "study_programs": {
@@ -55,22 +55,24 @@
       "Bachelor i informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
       "Bachelor i informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf"
     },
-    "UIT": {
-        "study_programs": {
-            "Bachelor i datateknikk, ingeniør": "https://uit.no/Content/869939/cache=20252801135857/2025%20Studieplan%20Datateknikk%20ingeni%C3%B8r%20-%20bachelor%20%28ordin%C3%A6r%20y-vei%203-semesterordning%20nettbasert%29%20BDT_BYDT_NBDT_BDT3S%20kull2025.pdf",
-            "Bachelor i informatikk, datafag": "https://uit.no/Content/868797/cache=20252801135340/Studieplan%20Bachelor%20i%20informatikk%2C%20datafag%20gjeldende%20fra%20h%C3%B8sten%202025.pdf",
-            "Bachelor i informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
-        },
-        "type": "pdf",
-        "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbyttebeskrivelse\") section. "
+    "type": "pdf",
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to include all descriptions"
+  },
+  "UIT": {
+    "study_programs": {
+      "Bachelor i datateknikk, ingeniør": "https://uit.no/Content/869939/cache=20252801135857/2025%20Studieplan%20Datateknikk%20ingeni%C3%B8r%20-%20bachelor%20%28ordin%C3%A6r%20y-vei%203-semesterordning%20nettbasert%29%20BDT_BYDT_NBDT_BDT3S%20kull2025.pdf",
+      "Bachelor i informatikk, datafag": "https://uit.no/Content/868797/cache=20252801135340/Studieplan%20Bachelor%20i%20informatikk%2C%20datafag%20gjeldende%20fra%20h%C3%B8sten%202025.pdf",
+      "Bachelor i informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
     },
     "type": "pdf",
-    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section."
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbyttebeskrivelse\") section. Make sure to include all descriptions"
   },
   "UIS": {
     "study_programs": {
-      "Bachelor-i-ingeniørfag, datateknologi": "https://www.uis.no/nb/studier/datateknologi-bachelor#/"
-    }
+      "Bachelor i ingeniørfag, datateknologi": "https://www.uis.no/nb/studier/datateknologi-bachelor#/"
+    },
+    "type": "website",
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include all descriptions"
   },
   "USN": {
     "study_programs": {
@@ -78,14 +80,14 @@
       "Bachelor i ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well"
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include all descriptions"
   },
   "OSLOMET": {
     "study_programs": {
-      "Bachelor-i-informasjonsteknologi": "https://student.oslomet.no/studier/-/studieinfo/programplan/INFORMATIK/2024/H%C3%98ST",
-      "Bachelor-i-ingeniørfag, data": "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGDATA/2024/H%C3%98ST"
+      "Bachelor i informasjonsteknologi": "https://student.oslomet.no/studier/-/studieinfo/programplan/INFORMATIK/2024/H%C3%98ST",
+      "Bachelor i ingeniørfag, data": "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGDATA/2024/H%C3%98ST"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section. Make sure to retrieve the nested points as one"
+    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section. Make sure to retrieve the nested points as one. Make sure to include all descriptions"
   }
 }

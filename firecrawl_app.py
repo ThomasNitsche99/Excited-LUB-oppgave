@@ -16,11 +16,11 @@ api_key = os.getenv("FIRECRAWL_API_KEY")
 app = FirecrawlApp(api_key=api_key)
 
 # Model/Schema for the extracted data
-class NestedModel1(BaseModel):
+class NestedModel(BaseModel):
     kunnskaper: list[str]
     ferdigheter: list[str]
     generell_kompetanse: list[str]
 
 class ExtractSchema(BaseModel):
-    læringsutbyttebeskrivelser: NestedModel1
+    læringsutbyttebeskrivelser: NestedModel
 
