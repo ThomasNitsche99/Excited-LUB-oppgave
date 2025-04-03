@@ -10,7 +10,6 @@ Uthentning av læringsutbyttebeskrivelser gjøres ved bruk av **Extract** - funk
 
 Det er mulig å endre hvordan dataen som scrapes representeres. Dette gjøres ved å modifisere `NestedModel(BaseModel)` i `firecrawl_app.py`. Her kan man definere en annen struktur for hvordan dataen skal organiseres og lagres.
 
-
 ## Teknisk beskrivelse
 
 For å se filstrukturen og en beskrivelse av filer, se [Filstruktur](#filstruktur)
@@ -89,9 +88,11 @@ Merk: For at Selenium skal fungere optimalt, må du også ha den aktuelle nettle
 ## Notater
 
 ### Om Prompter
+
 Husk at prompten som brukes for hver skole ikke nødvendigvis er den beste. Den som følger med denne kodebasen er blitt brukt til testing og beholdt grunnet gode resultater. <span style="color:green">Denne prompten er alltids mulig å endre!</span>
 
 ### Begrensninger i Scraping
+
 Grunnet vanskeligheter med nettsidene til USN (benytter seg av shadow-root), klarer ikke firecrawl å scrape læringsutbyttebeskrivelsene. Dette er fordi måten koden til nettsiden er lagt opp på ikke tilgjengeligjør ønsket informasjon med en gang. Derfor er det, for nå, ikke mulig å scrape USN sine nettsider med firecrawl. I mappen `Scraping/USN` ligger derfor gammel kode for scraping som håndterer shadow-root, men selve koden har forbedringspotensial. Denne er midlertidig mulig å bruke.
 
 UIT fremstiller læringsutbyttebeskrivelser i form av PDF. Firecrawl klarer å scrape PDF'er, men strukturen på denne PDF'en er så kronglete at den av en eller annen grunn ikke får det til (selvom den klarer Kristiania som også har det i PDF). Dette kan man se videre på.
