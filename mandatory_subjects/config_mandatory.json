@@ -1,0 +1,100 @@
+{
+  "UIO": {
+    "mandatory_subjects": {
+      "Informatikk: Programmering og systemarkitektur": "https://www.uio.no/studier/program/informatikk-programmering/oppbygging/",
+      "Informatikk: Design, bruk og interaksjon": "https://www.uio.no/studier/program/inf-design/oppbygging/",
+      "Informatikk: Digital oekonomi og ledelse": "https://www.uio.no/studier/program/informatikk-ledelse/oppbygging/"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program."
+  },
+  "UIB": {
+    "mandatory_subjects": {
+      "Bachelor i informatikk, datateknologi": "https://www4.uib.no/program/informatikk-datateknologi-bachelor/plan",
+      "Bachelor i kunstig intelligens": "https://www4.uib.no/program/kunstig-intelligens-bachelor/plan"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program."
+  },
+  "UIA": {
+    "mandatory_subjects": {
+      "Bachelor i ingenioerfag, data": "https://www.uia.no/studier/program/data-ingeniorutdanning-bachelor/studieplaner/2024h.html"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": [
+      "Find all elements marked as 'obligatoriske emner' or listed under <li class='mandatory'>. Extract the visible course names and their links (hrefs) even if they are hidden or collapsed in the interface. Return only the mandatory courses.",
+      "List all courses for this program, then filter out and return only those marked as mandatory (obligatoriske emner).",
+      "Return a list of all courses that are not marked as valgfri (elective) or optional.",
+      "Extract all course names listed under headings like 'Obligatoriske emner', 'Fellesemner', or 'Emner i studieplan'."
+    ]
+  },
+  "NTNU": {
+    "mandatory_subjects": {
+      "Bachelor i programmering": "https://www.ntnu.no/studier/studieplan#programmeCode=BPROG&year=2024",
+      "Bachelor i informatikk": "https://www.ntnu.no/studier/studieplan#programmeCode=BIT&year=2024",
+      "Bachelor i ingenioerfag, data": "https://www.ntnu.no/studier/studieplan#programmeCode=BIDATA&year=2024&dir=BIDATA-24-TRHEIM"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": [
+      "Extract all course names (emner) from the table where the status column has value 'O'. Only return those.",
+      "List all courses marked as mandatory by 'Status: O' in the table. Ignore all other rows.",
+      "Return only the subjects that are not marked as elective or optional in the status column."
+    ]
+  },
+  "HIOF": {
+    "mandatory_subjects": {
+      "Bachelor i ingeniørfag data, dataingienør": "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/oppbygging/"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program. Like for instance: ITF10219 Programmering 1"
+  },
+  "KRISTIANIA": {
+    "mandatory_subjects": {
+      "Bachelor i informasjonsteknologi - Interaktivt design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
+      "Bachelor i informasjonsteknologi - Kunstig intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf",
+      "Bachelor i informasjonsteknologi - Frontend og mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
+      "Bachelor i informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
+      "Bachelor i informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf"
+    },
+    "type": "pdf",
+    "prompt_mandatory_subjects": [
+      "Extract all course names (emner) for the program. Try to not add the valgrfrie or optional subjects. All the subjects like Digital teknologi 7,5 sp that has a blue background are mandatory. Extract all of them.",
+      "List all subjects from the program with 7,5 studiepoeng that are not under 'valgfag' or 'valgfrie emner'. Focus on the main subjects in the first 3 semesters which are typically mandatory.",
+      "Return all subjects before the section 'Valgfrie emner' and skip anything labeled 'valgfritt'. These are the mandatory subjects."
+    ]
+  },
+  "UIT": {
+    "mandatory_subjects": {
+      "Bachelor i datateknikk, ingeniør": "https://uit.no/Content/869939/cache=20252801135857/2025%20Studieplan%20Datateknikk%20ingeni%C3%B8r%20-%20bachelor%20%28ordin%C3%A6r%20y-vei%203-semesterordning%20nettbasert%29%20BDT_BYDT_NBDT_BDT3S%20kull2025.pdf",
+      "Bachelor i informatikk, datafag": "https://uit.no/Content/868797/cache=20252801135340/Studieplan%20Bachelor%20i%20informatikk%2C%20datafag%20gjeldende%20fra%20h%C3%B8sten%202025.pdf",
+      "Bachelor i informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
+    },
+    "type": "pdf",
+    "prompt_mandatory_subjects": "Extract all course names (emner) from the table showing the \"Oppbygging av studieprogram\" in the study plan. \n\nEach semester contains a list of subjects (e.g. \"DTE-2510 Grunnleggende Programmering\"). Only extract those that are *not marked* as valgfri emner (VF), valgemner, or listed under \"Fordypninger\" or \"Valgemner\" sections. \n\nInclude courses marked as IB, PB, TS, or similar categories in the table. Do not include VF subjects or elective subjects from the last semesters."
+  },
+  "UIS": {
+    "mandatory_subjects": {
+      "Bachelor i ingeniørfag, datateknologi": "https://www.uis.no/nb/studier/datateknologi-bachelor#/"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": [
+      "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program.",
+      "Return all courses marked as 'obligatorisk' or not marked as 'valgfag' (elective).",
+      "List all courses in the plan and include only those marked as 'O' or that are placed in year 1 and 2.",
+      "From the full course list, remove any course marked as 'valgfritt' and return the rest."
+    ]
+  },
+  "USN": {
+    "mandatory_subjects": {
+      "Bachelor i IT og informasjonssystemer": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ITIS_2025_H%C3%98ST",
+      "Bachelor i ingeniørfag, dataingeniør": "https://www.usn.no/studier/studie-og-emneplaner/#/studieplan/ING2_2025_H%C3%98ST"
+    },
+    "type": "website",
+    "prompt_mandatory_subjects": [
+      "Extract all course names (emner) for the program. Try to not add the valgrfrie or optional subjects. For instance: Database 1 and Informasjonssikkerhet are some of the mandatory subjects. The mandatory subjects are listed in the table under the heading 'Obligatoriske emner 1. og 2. studieår'.",
+      "Extract all courses from the study plan, and include only those listed in the first and second year if not labeled as 'valgfritt'.",
+      "Find and return all courses under any heading mentioning 'Obligatoriske emner'.",
+      "List all course names except those that are clearly labeled as 'valgfag', 'valgfritt' or 'fagvalg'."
+    ]
+  }
+}
