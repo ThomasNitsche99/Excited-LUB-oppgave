@@ -1,24 +1,26 @@
 # USN LUB Scraping
 
-This folder contains the logic for scraping the USN websites to extract learning outcomes (LUB) from various study programs.
+Denne mappen inneholder logikken for å skrape USN-nettstedene for å hente ut læringsutbyttebeskrivelser (LUB) fra ulike studieretninger.
 
-## Overview
+## Oversikt
 
-The main class responsible for the scraping logic is `usn_lub`, which is implemented in the [usn_lub_class.py](../USN/usn_lub_class.py) file. This class handles the following tasks:
-- Fetching HTML content from the USN study program pages.
-- Parsing the HTML to find relevant tags containing learning outcomes.
-- Extracting and cleaning the content under these tags.
-- Exporting the extracted content to `.txt` files.
+Hovedklassen som er ansvarlig for skrapelogikken er `usn_lub`, som er implementert i filen [usn_lub_class.py](../USN/usn_lub_class.py). Denne klassen håndterer følgende oppgaver:
 
-## Usage
+- Hente HTML-innhold fra USN-studieretningssidene.
+- Analysere HTML-en for å finne relevante tagger som inneholder læringsutbyttebeskrivelser.
+- Trekke ut og rense innholdet under disse taggene.
+- Eksportere det uttrukne innholdet til `.txt`-filer.
 
-To run the scraping script and generate the `.txt` files containing the learning outcomes, execute the [script.py](../USN/script.py) file. This script initializes the `USN_lub` class with the necessary parameters and calls the main method to start the scraping process. 
+## Bruk
 
-To add more study program and add relevant tags to extract text from, visit [script.py](../USN/script.py)
+For å kjøre skriptet og generere `.txt`-filene som inneholder læringsutbyttebeskrivelsene, kjør filen [script.py](../USN/script.py). Dette skriptet initialiserer `USN_lub`-klassen med de nødvendige parameterne og kaller hovedmetoden for å starte skrapeprosessen.
 
-## Requirements
+For å legge til flere studieretninger og relevante tagger for å trekke ut tekst fra, besøk [script.py](../USN/script.py)
 
-The rquirements (needed modules) for running the script is defined in [`Requirements.txt`](../USN/requirements.txt)
+## Krav
+
+Kravene (nødvendige moduler) for å kjøre skriptet er definert i [`Requirements.txt`](../USN/requirements.txt)
 
 ```bash
 pip install -r requirements.txt
+```
