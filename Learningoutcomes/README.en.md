@@ -115,7 +115,7 @@ This is intended as a tool to check if you are updated with the latest informati
 |[`learning_outcomes_single.ipynb`](learning_outcomes_single.ipynb)|Jupyter Notebook|Notebook for extraction of learning outcomes for one school|
 |[`learning_outcomes_differences.ipynb`](learning_outcomes_differences.ipynb)|Jupyter Notebook|Notebook for comparison of learning outcomes|
 |[`url_helper.ipynb`](url_helper.ipynb)|Jupyter Notebook|Notebook for help with URL addresses for study programs containing year numbers|
-|[`scraping/USN`](scraping/USN/README.en.md)|Folder|Contains code for scraping learning outcomes from USN|
+|[`Scraping/USN`](Scraping/USN/README.en.md)|Folder|Contains code for scraping learning outcomes from USN|
 
 ## Requirements for running
 
@@ -146,7 +146,7 @@ Remember that the prompt used for each school is not necessarily the best. The o
 
 ### Limitations in Scraping
 
-Due to difficulties with USN's websites (using shadow-root), Firecrawl cannot scrape the learning outcomes. This is because the way the website's code is structured does not make the desired information immediately available. Therefore, it is currently not possible to scrape USN's websites with Firecrawl. In the [`scraping/USN`](scraping/USN) folder, there is old code for scraping that handles shadow-root, but the code itself has room for improvement. This can be used temporarily. This will produce text files containing the learning outcomes. Read the `README.md` file for instructions.
+Due to difficulties with USN's websites (using shadow-root), Firecrawl cannot scrape the learning outcomes. This is because the way the website's code is structured does not make the desired information immediately available. Therefore, it is currently not possible to scrape USN's websites with Firecrawl. In the [`Scraping/USN`](Scraping/USN) folder, there is old code for scraping that handles shadow-root, but the code itself has room for improvement. This can be used temporarily. This will produce text files containing the learning outcomes. Read the `README.md` file for instructions.
 
 UIT presents learning outcomes in the form of PDFs. Firecrawl can scrape PDFs, but the structure of this PDF is so convoluted that it somehow fails to do so (even though it manages Kristiania which also has it in PDF). This can be looked into further.
 
