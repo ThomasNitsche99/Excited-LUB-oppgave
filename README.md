@@ -98,3 +98,23 @@ Grunnet vanskeligheter med nettsidene til USN (benytter seg av shadow-root), kla
 UIT fremstiller læringsutbyttebeskrivelser i form av PDF. Firecrawl klarer å scrape PDF'er, men strukturen på denne PDF'en er så kronglete at den av en eller annen grunn ikke får det til (selvom den klarer Kristiania som også har det i PDF). Dette kan man se videre på.
 
 <span style="color:red">**Pga. dette, er det ikke foreløpig mulig å hente ut læringsutbyttebeskrivelse for disse skolene med den eksisterende løsningen!** </span>
+
+## Sammenligning av læringsutbyttebeskrivelser
+
+Det er også laget et script for å kunne sammenligne to csv filer. Hensikten er å kunne se læringsutbyttebeskrivelsene har endret seg i løpet av en periode. For at sammenligningen skal fungere riktig, er det viktig at CSV-filene som skal sammenlignes er hentet med scriptene beskrevet i "Uthenting av læringsutbyttebeskrivelser og output", slik at formatet og kolonnene er de samme.
+
+For å kunne sammenlinge læringsutbyttebeskrivelser for alle studieprogram og skoler, kjører du jupyter notebooken [`learning_outcomes_differences.ipynb`](learning_outcomes.ipynb). Sørg for å definere nødvendige parametre i filen. Her skal du legge til de to csv filene du øsnker å sammenligne.
+
+Ved å kjøre scriptet og det er noen forskjeller vil det lages en CSV: "learning_outcome_differences.csv"- fil som inneholder:
+
+- *skole*
+- *studie_program*
+- *læringsutbytte type (kunnskap, ferdighet eller generell_kompetanse)*
+- *læringsutbytte*
+- *læringsutbytte first file*
+- *læringsutbytte second file*
+- *Differences*
+
+
+
+
