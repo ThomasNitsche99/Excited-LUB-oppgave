@@ -1,5 +1,7 @@
 # USN LUB Scraping
 
+[🇳🇴 Click here for norwegian version](README.md)
+
 This folder contains the logic for scraping the USN websites to extract learning outcomes (LUB) from various study programs.
 
 ## Overview

@@ -1,6 +1,10 @@
 # 🚀🚀 Læringsutbytte-uthenting 🚀🚀
 
+[🇮🇸 Click here for English version](README.en.md)
+
 Denne mappen inneholder kode for å hente ut Læringsutbyttebeskrivelser for studieprogram ved spesifiserte skoler i Norge.
+
+
 
 ## Innholdsfortegnelse 📑
 

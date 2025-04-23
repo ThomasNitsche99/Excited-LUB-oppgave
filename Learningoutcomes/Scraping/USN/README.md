@@ -1,5 +1,7 @@
 # USN LUB Scraping
 
+[🇮🇸 Click here for English version](README.en.md)
+
 Denne mappen inneholder logikken for å skrape USN-nettstedene for å hente ut læringsutbyttebeskrivelser (LUB) fra ulike studieretninger.
 
 ## Oversikt
