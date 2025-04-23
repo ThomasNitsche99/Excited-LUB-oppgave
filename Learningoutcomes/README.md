@@ -117,6 +117,7 @@ Dette er ment som et verktøy for å sjekke om man er oppdatert med nyeste infor
 |[`learning_outcomes_single.ipynb`](learning_outcomes_single.ipynb)|Jupyter Notebook|Notebook for uthenting av læringsutbyttebeskrivelser for én skole|
 |[`learning_outcomes_differences.ipynb`](learning_outcomes_differences.ipynb)|Jupyter Notebook|Notebook for sammenligning av læringsutbyttebeskrivelser|
 |[`url_helper.ipynb`](url_helper.ipynb)|Jupyter Notebook|Notebook for hjelp med URL adresser for studieprogram som inneholder årstall|
+|[`scraping/USN`](scraping/USN/README.md)|Mappe|Inneholder kode for å scrape læringsutbyttebeskrivelser fra USN|
 
 ## Krav for kjøring (Requirements)
 
@@ -147,7 +148,7 @@ Husk at prompten som brukes for hver skole ikke nødvendigvis er den beste. Den 
 
 ### Begrensninger i Scraping
 
-Grunnet vanskeligheter med nettsidene til USN (benytter seg av shadow-root), klarer ikke firecrawl å scrape læringsutbyttebeskrivelsene. Dette er fordi måten koden til nettsiden er lagt opp på ikke tilgjengeligjør ønsket informasjon med en gang. Derfor er det, for nå, ikke mulig å scrape USN sine nettsider med firecrawl. I mappen `Scraping/USN` ligger derfor gammel kode for scraping som håndterer shadow-root, men selve koden har forbedringspotensial. Denne er midlertidig mulig å bruke. Dette vil produsere tekstfiler som inneholder læringsutbyttebeskrivelsene.
+Grunnet vanskeligheter med nettsidene til USN (benytter seg av shadow-root), klarer ikke firecrawl å scrape læringsutbyttebeskrivelsene. Dette er fordi måten koden til nettsiden er lagt opp på ikke tilgjengeligjør ønsket informasjon med en gang. Derfor er det, for nå, ikke mulig å scrape USN sine nettsider med firecrawl. I mappen [`scraping/USN`](scraping/USN) ligger derfor gammel kode for scraping som håndterer shadow-root, men selve koden har forbedringspotensial. Denne er midlertidig mulig å bruke. Dette vil produsere tekstfiler som inneholder læringsutbyttebeskrivelsene. Les `README.md` for instruksjoner.
 
 UIT fremstiller læringsutbyttebeskrivelser i form av PDF. Firecrawl klarer å scrape PDF'er, men strukturen på denne PDF'en er så kronglete at den av en eller annen grunn ikke får det til (selvom den klarer Kristiania som også har det i PDF). Dette kan man se videre på.
 
