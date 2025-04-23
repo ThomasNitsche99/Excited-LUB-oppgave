@@ -21,7 +21,7 @@
       "Bachelor i ingenioerfag, data": "https://www.uia.no/studier/program/data-ingeniorutdanning-bachelor/studieplaner/2024h.html"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under «kunnskap», «ferdigheter» and «generell kompetanse» from the «læringsutbyttebeskrivelser («hva lærer du») section. Make sure to include the ones listed for different fields of study (if any). Include these as one single text.  Make sure to include all descriptions"
+    "prompt": "Extract all descriptions under «kunnskap», «ferdigheter» and «generell kompetanse» from the «læringsutbyttebeskrivelser («hva lærer du») section. Make sure to include the ones listed for different fields of study, if there are any. Include these as one single text, starting with the field of study, e.g. 'for studieretning..'. Make sure to include all descriptions"
   },
   "NTNU": {
     "study_programs": {
@@ -34,8 +34,8 @@
   },
   "HVL": {
     "study_programs": {
-      "Bachelor i informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2024h/studieplan/",
-      "Bachelor i ingeniørfag data": "https://www.hvl.no/studier/studieprogram/dataingenior/2024h/studieplan/"
+      "Bachelor i informasjonsteknologi": "https://www.hvl.no/studier/studieprogram/informasjonsteknologi-bergen/2025h/studieplan/",
+      "Bachelor i ingeniørfag data": "https://www.hvl.no/studier/studieprogram/dataingenior/2025h/studieplan/"
     },
     "type": "website",
     "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheiter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Hva lærer du\") section. Make sure to retrieve the descriptions listed in bold font as well. Make sure to include all descriptions"
@@ -49,8 +49,8 @@
   },
   "KRISTIANIA": {
     "study_programs": {
-      "Bachelor i informasjonsteknologi - Frontend og mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi-frontend-og-mobilutvikling-kull-2024.pdf",
-      "Bachelor i informasjonsteknologi - Interaktivt design": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---interaktivt-design-kull-2024.pdf",
+      "Bachelor i informasjonsteknologi - Frontend og mobilutvikling": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2025/seit/bachelor-i-informasjonsteknologi---frontend--og-mobilutvikling_kull-2025.pdf",
+      "Bachelor i informasjonsteknologi - Interaktivt design": "https://www.kristiania.no/contentassets/2881c365c4d2484eb104ff318f089bf2/bachelor-i-informasjonsteknologi---interaksjonsdesign_kull-2025.pdf",
       "Bachelor i informasjonsteknologi - Kunstig intelligens": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2023/seit/bachelor-i-informasjonsteknologi---kunstig-intelligens-2023.pdf",
       "Bachelor i informasjonsteknologi - Programmering": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2024/seit/bachelor-i-informasjonsteknologi---programmering-kull-2024.pdf",
       "Bachelor i informasjonsteknologi - Spillteknologi": "https://www.kristiania.no/globalassets/programbeskrivelser/hoyskole/2022/norsk/bachelor-i-informasjonsteknologi---spillteknologi-kull-2022.pdf"
@@ -65,7 +65,7 @@
       "Bachelor i informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
     },
     "type": "pdf",
-    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbyttebeskrivelse\") section. Make sure to include all descriptions"
+    "prompt": "Extract all descriptions under \"kunnskaper\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbyttebeskrivelse\") section. The pdf is structured as a table, having two columns. The first column is the content header, while the second column holds the content. The first column is the one which will say 'Læringsutbyttebeskrivelse', while the second column will list the descriptions starting with 'kandidaten..'. Make sure to include all descriptions"
   },
   "UIS": {
     "study_programs": {
@@ -84,10 +84,10 @@
   },
   "OSLOMET": {
     "study_programs": {
-      "Bachelor i informasjonsteknologi": "https://student.oslomet.no/studier/-/studieinfo/programplan/INFORMATIK/2024/H%C3%98ST",
-      "Bachelor i ingeniørfag, data": "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGDATA/2024/H%C3%98ST"
+      "Bachelor i informasjonsteknologi": "https://student.oslomet.no/studier/-/studieinfo/programplan/INFORMATIK/2025/H%C3%98ST",
+      "Bachelor i ingeniørfag, data": "https://student.oslomet.no/studier/-/studieinfo/programplan/HINGDATA/2025/H%C3%98ST"
     },
     "type": "website",
-    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section. Make sure to retrieve the nested points as one. Make sure to include all descriptions"
+    "prompt": "Extract all descriptions under \"kunnskap\", \"ferdigheter\", and \"generell kompetanse\" from the \"læringsutbyttebeskrivelser\" (\"Læringsutbytte\") section. If one description contains nested points, add these to the same desciption, seperated with a ';', as one instance. Make sure to retrieve the nested points as one. Make sure to include all descriptions"
   }
 }

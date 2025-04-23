@@ -4,6 +4,7 @@ from openpyxl.styles import Font, Alignment, PatternFill
 from openpyxl.utils import get_column_letter
 
 
+#Function for converting csv to excel
 def csv_to_excel(csv_file):
     # Step 1: Read the CSV
     df = pd.read_csv(csv_file)
