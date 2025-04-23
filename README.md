@@ -114,7 +114,3 @@ Ved å kjøre scriptet og det er noen forskjeller vil det lages en CSV: "learnin
 - *læringsutbytte first file*
 - *læringsutbytte second file*
 - *Differences*
-
-
-
-
