@@ -6,7 +6,10 @@
       "Informatikk: Digital oekonomi og ledelse": "https://www.uio.no/studier/program/informatikk-ledelse/oppbygging/"
     },
     "type": "website",
-    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program."
+    "prompt_mandatory_subjects": [
+      "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program.",
+      "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program."
+    ]
   },
   "UIB": {
     "mandatory_subjects": {
@@ -60,7 +63,7 @@
     "prompt_mandatory_subjects": [
       "Extract all course names (emner) for the program. Try to not add the valgrfrie or optional subjects. All the subjects like Digital teknologi 7,5 sp that has a blue background are mandatory. Extract all of them.",
       "List all subjects from the program with 7,5 studiepoeng that are not under 'valgfag' or 'valgfrie emner'. Focus on the main subjects in the first 3 semesters which are typically mandatory.",
-      "Return all subjects before the section 'Valgfrie emner' and skip anything labeled 'valgfritt'. These are the mandatory subjects."
+      "Return all subjects before the section 'Valgfrie emner' and skip anything labeled 'valgfritt'. These are the mandatory subjects. Do not add the extra information that is not a subject. For instance add subjects names and number only like Kunstig intelligens or Databaser  "
     ]
   },
   "UIT": {
