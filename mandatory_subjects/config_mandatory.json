@@ -17,7 +17,7 @@
       "Bachelor i kunstig intelligens": "https://www4.uib.no/program/kunstig-intelligens-bachelor/plan"
     },
     "type": "website",
-    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program."
+    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering)."
   },
   "UIA": {
     "mandatory_subjects": {
@@ -26,9 +26,9 @@
     "type": "website",
     "prompt_mandatory_subjects": [
       "Find all elements marked as 'obligatoriske emner' or listed under <li class='mandatory'>. Extract the visible course names and their links (hrefs) even if they are hidden or collapsed in the interface. Return only the mandatory courses.",
-      "List all courses for this program, then filter out and return only those marked as mandatory (obligatoriske emner).",
-      "Return a list of all courses that are not marked as valgfri (elective) or optional.",
-      "Extract all course names listed under headings like 'Obligatoriske emner', 'Fellesemner', or 'Emner i studieplan'."
+      "List all courses for this program, then filter out and return only those marked as mandatory (obligatoriske emner). Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering).",
+      "Return a list of all courses that are not marked as valgfri (elective) or optional. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering).",
+      "Extract all course names listed under headings like 'Obligatoriske emner', 'Fellesemner', or 'Emner i studieplan'. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering)."
     ]
   },
   "NTNU": {
@@ -39,9 +39,9 @@
     },
     "type": "website",
     "prompt_mandatory_subjects": [
-      "Extract all course names (emner) from the table where the status column has value 'O'. Only return those.",
-      "List all courses marked as mandatory by 'Status: O' in the table. Ignore all other rows.",
-      "Return only the subjects that are not marked as elective or optional in the status column."
+      "Extract all course names (emner) from the table where the status column has value 'O'. Only return those. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering).",
+      "List all courses marked as mandatory by 'Status: O' in the table. Ignore all other rows. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering).",
+      "Return only the subjects that are not marked as elective or optional in the status column. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering)."
     ]
   },
   "HIOF": {
@@ -49,7 +49,7 @@
       "Bachelor i ingeniørfag data, dataingienør": "https://www.hiof.no/studier/programmer/dat-bachelorstudium-i-ingeniorfag-data/oppbygging/"
     },
     "type": "website",
-    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program. Like for instance: ITF10219 Programmering 1"
+    "prompt_mandatory_subjects": "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program. Like for instance: ITF10219 Programmering 1. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering)."
   },
   "KRISTIANIA": {
     "mandatory_subjects": {
@@ -73,7 +73,7 @@
       "Bachelor i informatikk, datamaskinsystemer": "https://uit.no/Content/868804/cache=20252801135338/Studieplan%20Bachelor%20i%20informatikk%2C%20datamaskinsystemer%20gjeldende%20fra%20h%C3%B8sten%202025.pdf"
     },
     "type": "pdf",
-    "prompt_mandatory_subjects": "Extract all course names (emner) from the table showing the \"Oppbygging av studieprogram\" in the study plan. \n\nEach semester contains a list of subjects (e.g. \"DTE-2510 Grunnleggende Programmering\"). Only extract those that are *not marked* as valgfri emner (VF), valgemner, or listed under \"Fordypninger\" or \"Valgemner\" sections. \n\nInclude courses marked as IB, PB, TS, or similar categories in the table. Do not include VF subjects or elective subjects from the last semesters."
+    "prompt_mandatory_subjects": "Extract all course names (emner) from the table showing the \"Oppbygging av studieprogram\" in the study plan. \n\nEach semester contains a list of subjects (e.g. \"DTE-2510 Grunnleggende Programmering\"). Only extract those that are *not marked* as valgfri emner (VF), valgemner, or listed under \"Fordypninger\" or \"Valgemner\" sections. \n\nInclude courses marked as IB, PB, TS, or similar categories in the table. Do not include VF subjects or elective subjects from the last semesters. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering)."
   },
   "UIS": {
     "mandatory_subjects": {
@@ -83,8 +83,8 @@
     "prompt_mandatory_subjects": [
       "Extract all course names (emner) listed as mandatory (obligatoriske emner) for the program.",
       "Return all courses marked as 'obligatorisk' or not marked as 'valgfag' (elective).",
-      "List all courses in the plan and include only those marked as 'O' or that are placed in year 1 and 2.",
-      "From the full course list, remove any course marked as 'valgfritt' and return the rest."
+      "List all courses in the plan and include only those marked as 'O' or that are placed in year 1 and 2. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering).",
+      "From the full course list, remove any course marked as 'valgfritt' and return the rest. Format each if possible as: CODE – NAME (e.g., INFO132 – Programmering)."
     ]
   },
   "USN": {

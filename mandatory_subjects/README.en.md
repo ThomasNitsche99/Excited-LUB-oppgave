@@ -72,16 +72,18 @@ Results are saved in `Mandatory_subjects_best_prompts.csv` with information abou
 
 ## File structure
 
-| File                                | Description                                                  |
-| ----------------------------------- | ------------------------------------------------------------ |
-| `config_mandatory.json`             | Configuration file with schools, study programs, and prompts |
-| `subjects_outcomes.ipynb`           | Main notebook for extraction from all schools                |
-| `subjects_outcomes_single.ipynb`    | Notebook for extraction from a single school                 |
-| `ntnu_subjects_selenium.ipynb`      | Special handling for NTNU                                    |
-| `usn_subjects_selenium.ipynb`       | Special handling for USN (Selenium)                          |
-| `new_usn_subjects_playwright.ipynb` | Special handling for USN (Playwright)                        |
-| `firecrawl_app.py`                  | Firecrawl application code                                   |
-| `utils/`                            | Helper functions                                             |
+| File                                | Description                                                                  |
+| ----------------------------------- | ---------------------------------------------------------------------------- |
+| `config_mandatory.json`             | Configuration file with schools, study programs, and prompts                 |
+| `subjects_outcomes.ipynb`           | Main notebook for extraction from all schools                                |
+| `subjects_outcomes_single.ipynb`    | Notebook for extraction from a single school                                 |
+| `ntnu_subjects_selenium.ipynb`      | Special handling for NTNU                                                    |
+| `usn_subjects_selenium.ipynb`       | Special handling for USN (Selenium)                                          |
+| `new_usn_subjects_playwright.ipynb` | Special handling for USN (Playwright)                                        |
+| `firecrawl_app.py`                  | Firecrawl application code                                                   |
+| `utils/`                            | Helper functions                                                             |
+| `combined_subjects_extraction.py`   | Script that extracts all schools including NTNU using Selenium and Firecrawl |
+| `new_usn_subjects_playwright.py`    | Updated Playwright-based extraction for USN only                             |
 
 ---
 

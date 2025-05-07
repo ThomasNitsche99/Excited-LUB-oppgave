@@ -72,16 +72,18 @@ Resultatene lagres i `Mandatory_subjects_best_prompts.csv` med informasjon om hv
 
 ## Filstruktur
 
-| Fil                                 | Beskrivelse                                            |
-| ----------------------------------- | ------------------------------------------------------ |
-| `config_mandatory.json`             | Konfigurasjonsfil med skoler, studieprogram og prompts |
-| `subjects_outcomes.ipynb`           | Hovednotebook for uthenting fra alle skoler            |
-| `subjects_outcomes_single.ipynb`    | Notebook for uthenting fra én skole                    |
-| `ntnu_subjects_selenium.ipynb`      | Spesialhåndtering for NTNU                             |
-| `usn_subjects_selenium.ipynb`       | Spesialhåndtering for USN (Selenium)                   |
-| `new_usn_subjects_playwright.ipynb` | Spesialhåndtering for USN (Playwright)                 |
-| `firecrawl_app.py`                  | Firecrawl applikasjonskode                             |
-| `utils/`                            | Hjelpefunksjoner                                       |
+| Fil                                 | Beskrivelse                                                               |
+| ----------------------------------- | ------------------------------------------------------------------------- |
+| `config_mandatory.json`             | Konfigurasjonsfil med skoler, studieprogram og prompts                    |
+| `subjects_outcomes.ipynb`           | Hovednotebook for uthenting fra alle skoler                               |
+| `subjects_outcomes_single.ipynb`    | Notebook for uthenting fra én skole                                       |
+| `ntnu_subjects_selenium.ipynb`      | Spesialhåndtering for NTNU                                                |
+| `usn_subjects_selenium.ipynb`       | Spesialhåndtering for USN (Selenium)                                      |
+| `new_usn_subjects_playwright.ipynb` | Spesialhåndtering for USN (Playwright)                                    |
+| `firecrawl_app.py`                  | Firecrawl applikasjonskode                                                |
+| `utils/`                            | Hjelpefunksjoner                                                          |
+| `combined_subjects_extraction.py`   | Skript som henter ut alle skoler inkludert NTNU med Selenium og Firecrawl |
+| `new_usn_subjects_playwright.py`    | Oppdatert Playwright-skript for USN                                       |
 
 ---
 
