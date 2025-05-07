@@ -17,8 +17,8 @@ Oppsett og funksjonalitet er nokså likt for begge konseptene.
 
 [🇮🇸 les på engelsk](Learningoutcomes/README.en.md)
 
-## 📚  Obligatoriske fag
+## 📚 Obligatoriske fag
 
-[🇳🇴 Les på norsk]()
+[🇳🇴 Les på norsk](mandatory_subjects/README.md)
 
-[🇮🇸 les på engelsk]()
+[🇮🇸 les på engelsk](mandatory_subjects/README.en.md)

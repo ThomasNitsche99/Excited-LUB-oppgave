@@ -19,6 +19,6 @@ The setup and functionality are quite similar for both concepts.
 
 ## 📚 Mandatory Subjects
 
-[🇳🇴 Read in Norwegian]()
+[🇳🇴 Read in Norwegian](mandatory_subjects/README.md)
 
-[🇮🇸 Read in English]() 
+[🇮🇸 Read in English](mandatory_subjects/README.en.md)
