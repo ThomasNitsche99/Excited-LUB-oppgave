@@ -70,15 +70,13 @@ A script has also been created to compare two CSV files. The purpose is to be ab
 
 To compare learning outcomes for all study programs and schools, run the Jupyter notebook [`learning_outcomes_differences.ipynb`](learning_outcomes.ipynb). Make sure to define the necessary parameters in the file. Here you should add the two CSV files you want to compare.
 
-When running the script and there are some differences, a CSV file "learning_outcome_differences.csv" will be created containing:
+By running the script, if there are any differences, a CSV file named "learning_outcome_differences.csv" will be created, containing:
 
 - *school*
 - *study_program*
 - *learning_outcome type (knowledge, skill or general_competence)*
 - *learning_outcome*
-- *learning_outcome first file*
-- *learning_outcome second file*
-- *Differences*
+- *learning outcome exsists in file x*
 
 ## Help with URLs containing years
 

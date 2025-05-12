@@ -70,7 +70,7 @@ Etter å ha kjørt scriptet som lager CSV-filer, vil det i tillegg lages en exce
 
 Det er også laget et script for å kunne sammenligne to csv filer. Hensikten er å kunne se læringsutbyttebeskrivelsene har endret seg i løpet av en periode. For at sammenligningen skal fungere riktig, er det viktig at CSV-filene som skal sammenlignes er hentet med scriptene beskrevet i "Uthenting av læringsutbyttebeskrivelser og output", slik at formatet og kolonnene er de samme.
 
-For å kunne sammenlinge læringsutbyttebeskrivelser for alle studieprogram og skoler, kjører du jupyter notebooken [`learning_outcomes_differences.ipynb`](learning_outcomes.ipynb). Sørg for å definere nødvendige parametre i filen. Her skal du legge til de to csv filene du ønsker å sammenligne.
+For å kunne sammenlinge læringsutbyttebeskrivelser for alle studieprogram og skoler, kjører du jupyter notebooken [`learning_outcomes_differences.ipynb`](learning_outcomes.ipynb). Sørg for å definere nødvendige parametre i filen. Her skal du legge til de to csv filene du øsnker å sammenligne.
 
 Ved å kjøre scriptet og det er noen forskjeller vil det lages en CSV: "learning_outcome_differences.csv"- fil som inneholder:
 
@@ -78,9 +78,7 @@ Ved å kjøre scriptet og det er noen forskjeller vil det lages en CSV: "learnin
 - *studie_program*
 - *læringsutbytte type (kunnskap, ferdighet eller generell_kompetanse)*
 - *læringsutbytte*
-- *læringsutbytte first file*
-- *læringsutbytte second file*
-- *Differences*
+- *hvilken fil læringsutbyttebeksrivelsen finnes i*
 
 ## Hjelp med URL'er som inneholder år
 
